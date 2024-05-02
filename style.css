@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d37f7f;
+    background-image: url(./img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; Ensure body is relative for absolute positioning */
+}
+
+.container {
+    position: absolute;
+    top: 50%; /* Move the container to the center vertically */
+    left: 50%; /* Move the container to the center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+    /* max-width: 1200px; */
+    width: 60vw;
+    padding: 20px;
+    background-color: #62dfa170;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #6da3e0;
+    margin-bottom: 20px;
+}
+
+.task-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-input {
+    flex: 20px;
+    padding: 10px;
+    border: 2px solid #728daa;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-task {
+    padding: 10px 20px;
+    background-color: #d65ebcd3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-task:hover {
+    background-color: #b3008c;
+}
+
+.task-list {
+    margin-bottom: 20px;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #e4afaf13;
+}
+
+.task-buttons button {
+    padding: 6px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complete-button {
+    background-color: #63c97b;
+    color: #fff;
+}
+
+.complete-button:hover {
+    background-color: #08b92e;
+}
+
+.delete-button {
+    background-color: #eb7984;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #bb081a;
+}
+
+.task-counts {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.task-counts p {
+    margin: 5px;
+    color: #110c0c;
+}
+
+.task-counts span {
+    font-weight: bold;
+    color: #3f3f3f;
+}
